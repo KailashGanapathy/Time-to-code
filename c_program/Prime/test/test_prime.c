@@ -30,6 +30,12 @@ void test_onezero(void)
   TEST_ASSERT_EQUAL(-1, prime(1));
 }
 
+void test_negative(void)
+{
+  TEST_ASSERT_EQUAL(-1, prime(-47));
+  TEST_ASSERT_EQUAL(-1, prime(-100));
+}
+
 int test_main(void)
 {
 /* Initiate the Unity Test Framework */
@@ -39,6 +45,7 @@ int test_main(void)
   RUN_TEST(test_prime);
   RUN_TEST(test_composite);
   RUN_TEST(test_onezero);
+  RUN_TEST(test_negative);
 
   /* Close the Unity Test Framework */
   return UNITY_END();

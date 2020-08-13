@@ -4,8 +4,8 @@ int prime(int number)
 {
   int iter;
 
-  /* Return -1 for neither prime nor composite numbers */
-  if(number == 0 || number == 1)
+  /* Return -1 for neither prime nor composite numbers and also for negative numbers*/
+  if(number <= 1)
     return -1;
   /* Return 1 for prime number 0 for Composite number */
   
