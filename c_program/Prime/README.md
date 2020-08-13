@@ -1,1 +1,1 @@
-This program use to check whether the number is prime number
+This program will check whether the number is prime number
