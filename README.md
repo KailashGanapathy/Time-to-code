@@ -8,7 +8,16 @@
 * Let's try to Code!
 
 ## Integrated Tools to GitHub
+
 *  [Codacy](https://www.codacy.com/)
+
+## GitHub Actions
+
+Interact with your's and contributor's files with the following 
+
+* Build using Make for CI
+* Unit tests with Cunit
+* Static code analysis using cppcheck
 
 ## To have this file:
 
