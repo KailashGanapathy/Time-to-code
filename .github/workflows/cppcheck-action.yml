@@ -12,7 +12,7 @@ jobs:
         run: sudo apt-get -y install cppcheck
         
       - name: Cppcheck code Substring
-        run: cppcheck Time-to-code/c_program/Substring
+        run: cppcheck c_program/Substring
       
       - name: Cppcheck code Prime
-        run: cppcheck Time-to-code/c_program/Prime
+        run: cppcheck c_program/Prime
