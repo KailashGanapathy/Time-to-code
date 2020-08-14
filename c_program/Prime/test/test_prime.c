@@ -1,3 +1,5 @@
+/// @file test_prime.c 
+
 #include "unity.h"
 #include "prime.h"
 
@@ -5,6 +7,12 @@
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
+
+/// @see prime.c
+/**
+* This Function Check for Prime Number
+* @note Return 1 If the input number is a Prime Number
+*/
 
 void test_prime(void)
 {
@@ -15,6 +23,12 @@ void test_prime(void)
   TEST_ASSERT_EQUAL(1, prime(991));
   TEST_ASSERT_EQUAL(1, prime(89));
 }
+
+/**
+* This Function Check for Composite Number
+* @note Return 0 If the input number is a composite Number
+*/
+
 void test_composite(void)
 {
   TEST_ASSERT_EQUAL(0, prime(6));
@@ -24,11 +38,22 @@ void test_composite(void)
   TEST_ASSERT_EQUAL(0, prime(96));
   TEST_ASSERT_EQUAL(0, prime(1000));
 }
+
+/**
+* This Function Check for Neither prime nor composite Number
+* @note Return -1 If the input number is neither prime nor composite
+*/
+
 void test_onezero(void)
 {
   TEST_ASSERT_EQUAL(-1, prime(0));
   TEST_ASSERT_EQUAL(-1, prime(1));
 }
+
+/**
+* This Function Check whether the number is negative number input 
+* @note Return -1 If the input number is a negative number
+*/
 
 void test_negative(void)
 {
