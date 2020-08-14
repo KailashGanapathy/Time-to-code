@@ -2,6 +2,9 @@
 
 #include "prime.h"
 
+#ifndefine DIVISIBLE
+# define DIVISIBLE(numerator, denominator) (numerator%denominator) /// <DIVISIBIBLITY check using MODULO operatot>
+
 /**
 * This function used to check whether the input number is a Prime number
 * @param[in] number the input number need to check the condition
@@ -27,7 +30,7 @@ int prime(int number)
   
   for(iter = 2; iter <= (number/2); iter++)
   {
-    if(number%iter == 0)
+    if(!(DIVISIBLE(number,iter))
       return 0;
   }
 
