@@ -9,4 +9,4 @@ This program will check whether the number is prime number
 * step 3: make run
 * step 4: make doc (Doxygen Documentation)
 
-Please navigate to (documentation -> html -> index.html) to view the files  
+Please navigate to (documentation -> html -> index.html) to view the files
