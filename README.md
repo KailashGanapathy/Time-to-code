@@ -16,7 +16,7 @@
 Interact with your's and contributor's files with the following 
 
 * Build using Make for CI
-* Unit tests with Cunit
+* Unit tests with Cunit and Unity
 * Static code analysis using cppcheck
 
 ## To have this file:
